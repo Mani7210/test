@@ -791,3 +791,39 @@ Identify and stop the process that's listening on port 8001 or configure this ap
 2025-03-07T19:55:58.466+05:30  INFO 16896 --- [test] [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-03-07T19:55:58.469+05:30  INFO 16896 --- [test] [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-03-07T19:55:58.755+05:30  INFO 16896 --- [test] [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-07T20:13:13.656+05:30  INFO 18812 --- [test] [main] c.e.test.TestttttttttttApplication       : Starting TestttttttttttApplication using Java 21.0.4 with PID 18812 (C:\Users\DELL\Documents\workspace-sts4\testtttttttttt\target\classes started by DELL in C:\Users\DELL\Documents\workspace-sts4\testtttttttttt)
+2025-03-07T20:13:13.660+05:30  INFO 18812 --- [test] [main] c.e.test.TestttttttttttApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-07T20:13:15.774+05:30  INFO 18812 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-07T20:13:15.778+05:30  INFO 18812 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-03-07T20:13:15.936+05:30  INFO 18812 --- [test] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.test.Repository.AuthenticationRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-03-07T20:13:15.939+05:30  INFO 18812 --- [test] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.test.Repository.EmployeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-03-07T20:13:15.940+05:30  INFO 18812 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137 ms. Found 0 JDBC repository interfaces.
+2025-03-07T20:13:15.972+05:30  INFO 18812 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-07T20:13:15.975+05:30  INFO 18812 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-07T20:13:16.036+05:30  INFO 18812 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2025-03-07T20:13:17.611+05:30  INFO 18812 --- [test] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8001 (http)
+2025-03-07T20:13:17.645+05:30  INFO 18812 --- [test] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T20:13:17.645+05:30  INFO 18812 --- [test] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T20:13:17.856+05:30  INFO 18812 --- [test] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-07T20:13:17.857+05:30  INFO 18812 --- [test] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4051 ms
+2025-03-07T20:13:18.278+05:30  INFO 18812 --- [test] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-07T20:13:18.406+05:30  INFO 18812 --- [test] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-07T20:13:18.471+05:30  INFO 18812 --- [test] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-07T20:13:19.065+05:30  INFO 18812 --- [test] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-07T20:13:19.127+05:30  INFO 18812 --- [test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-07T20:13:20.620+05:30  INFO 18812 --- [test] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e36bc01
+2025-03-07T20:13:20.622+05:30  INFO 18812 --- [test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-07T20:13:20.779+05:30  INFO 18812 --- [test] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-07T20:13:21.706+05:30  INFO 18812 --- [test] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-07T20:13:21.845+05:30  INFO 18812 --- [test] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T20:13:22.221+05:30  WARN 18812 --- [test] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-07T20:13:22.615+05:30 DEBUG 18812 --- [test] [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2025-03-07T20:13:22.842+05:30  INFO 18812 --- [test] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8001 (http) with context path '/'
+2025-03-07T20:13:22.854+05:30  INFO 18812 --- [test] [main] c.e.test.TestttttttttttApplication       : Started TestttttttttttApplication in 9.993 seconds (process running for 10.612)
