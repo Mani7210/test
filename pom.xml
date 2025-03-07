@@ -76,7 +76,7 @@
 					<archive>
 						<manifestEntries>
 							<Main-Class>
-								com.example.test</Main-Class> <!--
+								com.example.test.TestttttttttttApplication</Main-Class> <!--
 							Replace with your main class -->
 						</manifestEntries>
 					</archive>
