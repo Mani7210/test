@@ -616,3 +616,136 @@ Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-valid
 2025-03-07T19:03:52.149+05:30  INFO 15068 --- [testtttttttttt] [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-03-07T19:03:52.152+05:30  INFO 15068 --- [testtttttttttt] [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-03-07T19:03:52.161+05:30  INFO 15068 --- [testtttttttttt] [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-07T19:25:21.311+05:30  INFO 12188 --- [test] [main] c.e.test.TestttttttttttApplication       : Starting TestttttttttttApplication using Java 21.0.4 with PID 12188 (C:\Users\DELL\Documents\workspace-sts4\testtttttttttt\target\classes started by DELL in C:\Users\DELL\Documents\workspace-sts4\testtttttttttt)
+2025-03-07T19:25:21.320+05:30  INFO 12188 --- [test] [main] c.e.test.TestttttttttttApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-07T19:25:23.560+05:30  INFO 12188 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-07T19:25:23.564+05:30  INFO 12188 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-03-07T19:25:23.721+05:30  INFO 12188 --- [test] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.test.Repository.AuthenticationRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-03-07T19:25:23.723+05:30  INFO 12188 --- [test] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.test.Repository.EmployeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-03-07T19:25:23.725+05:30  INFO 12188 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 0 JDBC repository interfaces.
+2025-03-07T19:25:23.758+05:30  INFO 12188 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-07T19:25:23.761+05:30  INFO 12188 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-07T19:25:23.874+05:30  INFO 12188 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 2 JPA repository interfaces.
+2025-03-07T19:25:25.343+05:30  INFO 12188 --- [test] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8001 (http)
+2025-03-07T19:25:25.392+05:30  INFO 12188 --- [test] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T19:25:25.393+05:30  INFO 12188 --- [test] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T19:25:25.541+05:30  INFO 12188 --- [test] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-07T19:25:25.541+05:30  INFO 12188 --- [test] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4019 ms
+2025-03-07T19:25:26.179+05:30  INFO 12188 --- [test] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-07T19:25:26.368+05:30  INFO 12188 --- [test] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-07T19:25:26.504+05:30  INFO 12188 --- [test] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-07T19:25:27.471+05:30  INFO 12188 --- [test] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-07T19:25:27.568+05:30  INFO 12188 --- [test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-07T19:25:28.607+05:30  INFO 12188 --- [test] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f1d1463
+2025-03-07T19:25:28.612+05:30  INFO 12188 --- [test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-07T19:25:28.948+05:30  INFO 12188 --- [test] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-07T19:25:30.643+05:30  INFO 12188 --- [test] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-07T19:25:30.727+05:30  INFO 12188 --- [test] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T19:25:31.283+05:30  WARN 12188 --- [test] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-07T19:25:31.871+05:30 DEBUG 12188 --- [test] [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2025-03-07T19:25:32.156+05:30  INFO 12188 --- [test] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8001 (http) with context path '/'
+2025-03-07T19:25:32.193+05:30  INFO 12188 --- [test] [main] c.e.test.TestttttttttttApplication       : Started TestttttttttttApplication in 12.26 seconds (process running for 13.446)
+2025-03-07T19:47:32.392+05:30  INFO 9580 --- [test] [main] c.e.test.TestttttttttttApplication       : Starting TestttttttttttApplication using Java 21.0.4 with PID 9580 (C:\Users\DELL\Documents\workspace-sts4\testtttttttttt\target\classes started by DELL in C:\Users\DELL\Documents\workspace-sts4\testtttttttttt)
+2025-03-07T19:47:32.394+05:30  INFO 9580 --- [test] [main] c.e.test.TestttttttttttApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-07T19:47:33.093+05:30  INFO 9580 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-07T19:47:33.095+05:30  INFO 9580 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-03-07T19:47:33.130+05:30  INFO 9580 --- [test] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.test.Repository.AuthenticationRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-03-07T19:47:33.131+05:30  INFO 9580 --- [test] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.test.Repository.EmployeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-03-07T19:47:33.132+05:30  INFO 9580 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 0 JDBC repository interfaces.
+2025-03-07T19:47:33.142+05:30  INFO 9580 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-07T19:47:33.144+05:30  INFO 9580 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-07T19:47:33.174+05:30  INFO 9580 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2025-03-07T19:47:33.657+05:30  INFO 9580 --- [test] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8001 (http)
+2025-03-07T19:47:33.673+05:30  INFO 9580 --- [test] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T19:47:33.674+05:30  INFO 9580 --- [test] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T19:47:33.723+05:30  INFO 9580 --- [test] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-07T19:47:33.723+05:30  INFO 9580 --- [test] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1259 ms
+2025-03-07T19:47:33.883+05:30  INFO 9580 --- [test] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-07T19:47:33.939+05:30  INFO 9580 --- [test] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-07T19:47:33.973+05:30  INFO 9580 --- [test] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-07T19:47:34.237+05:30  INFO 9580 --- [test] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-07T19:47:34.265+05:30  INFO 9580 --- [test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-07T19:47:35.073+05:30  INFO 9580 --- [test] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@478089b6
+2025-03-07T19:47:35.075+05:30  INFO 9580 --- [test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-07T19:47:35.231+05:30  INFO 9580 --- [test] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-07T19:47:36.025+05:30  INFO 9580 --- [test] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-07T19:47:36.324+05:30  INFO 9580 --- [test] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T19:47:36.600+05:30  WARN 9580 --- [test] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-07T19:47:36.890+05:30 DEBUG 9580 --- [test] [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2025-03-07T19:47:37.074+05:30  WARN 9580 --- [test] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-03-07T19:47:37.076+05:30  INFO 9580 --- [test] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T19:47:37.078+05:30  INFO 9580 --- [test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-07T19:47:37.403+05:30  INFO 9580 --- [test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-07T19:47:37.414+05:30  INFO 9580 --- [test] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-07T19:47:37.430+05:30 ERROR 9580 --- [test] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8001 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8001 or configure this application to listen on another port.
+
+2025-03-07T19:47:52.031+05:30  INFO 9436 --- [test] [main] c.e.test.TestttttttttttApplication       : Starting TestttttttttttApplication using Java 21.0.4 with PID 9436 (C:\Users\DELL\Documents\workspace-sts4\testtttttttttt\target\classes started by DELL in C:\Users\DELL\Documents\workspace-sts4\testtttttttttt)
+2025-03-07T19:47:52.034+05:30  INFO 9436 --- [test] [main] c.e.test.TestttttttttttApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-07T19:47:52.875+05:30  INFO 9436 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-07T19:47:52.878+05:30  INFO 9436 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-03-07T19:47:52.918+05:30  INFO 9436 --- [test] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.test.Repository.AuthenticationRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-03-07T19:47:52.919+05:30  INFO 9436 --- [test] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.test.Repository.EmployeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-03-07T19:47:52.920+05:30  INFO 9436 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 0 JDBC repository interfaces.
+2025-03-07T19:47:52.938+05:30  INFO 9436 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-07T19:47:52.939+05:30  INFO 9436 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-07T19:47:52.980+05:30  INFO 9436 --- [test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+2025-03-07T19:47:53.621+05:30  INFO 9436 --- [test] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8001 (http)
+2025-03-07T19:47:53.640+05:30  INFO 9436 --- [test] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T19:47:53.641+05:30  INFO 9436 --- [test] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T19:47:53.708+05:30  INFO 9436 --- [test] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-07T19:47:53.709+05:30  INFO 9436 --- [test] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1616 ms
+2025-03-07T19:47:53.902+05:30  INFO 9436 --- [test] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-07T19:47:53.959+05:30  INFO 9436 --- [test] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-07T19:47:54.007+05:30  INFO 9436 --- [test] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-07T19:47:54.355+05:30  INFO 9436 --- [test] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-07T19:47:54.400+05:30  INFO 9436 --- [test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-07T19:47:55.131+05:30  INFO 9436 --- [test] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28b5d5dc
+2025-03-07T19:47:55.135+05:30  INFO 9436 --- [test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-07T19:47:55.299+05:30  INFO 9436 --- [test] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-07T19:47:56.221+05:30  INFO 9436 --- [test] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-07T19:47:56.372+05:30  INFO 9436 --- [test] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T19:47:56.713+05:30  WARN 9436 --- [test] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-07T19:47:57.076+05:30 DEBUG 9436 --- [test] [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2025-03-07T19:47:57.278+05:30  INFO 9436 --- [test] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8001 (http) with context path '/'
+2025-03-07T19:47:57.291+05:30  INFO 9436 --- [test] [main] c.e.test.TestttttttttttApplication       : Started TestttttttttttApplication in 6.016 seconds (process running for 7.067)
+2025-03-07T19:48:24.210+05:30  INFO 9436 --- [test] [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-03-07T19:48:24.213+05:30  INFO 9436 --- [test] [RMI TCP Connection(4)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-07T19:48:24.220+05:30  INFO 9436 --- [test] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-07T19:48:24.223+05:30  INFO 9436 --- [test] [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T19:48:24.225+05:30  INFO 9436 --- [test] [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-07T19:48:24.520+05:30  INFO 9436 --- [test] [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
