@@ -8,6 +8,4 @@ import com.example.test.Entity.Employee;
 public interface EmployeeRepository  extends JpaRepository<Employee, String>{
 
 
-	
-
 }

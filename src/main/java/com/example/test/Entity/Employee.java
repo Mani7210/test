@@ -1,7 +1,5 @@
 package com.example.test.Entity;
 
-import java.time.LocalDateTime;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -14,12 +12,6 @@ public class Employee {
 	@Id
 	@Column(length = 36)
 	private String id;
-
-	@Column(name = "created_date", nullable = false)
-	private LocalDateTime createdDate;
-
-	@Column(name = "end_date", nullable = false)
-	private LocalDateTime endDate;
 
 	@Column(length = 36, nullable = false)
 	private String name;
@@ -35,21 +27,6 @@ public class Employee {
 		this.id = id;
 	}
 
-	public LocalDateTime getCreatedDate() {
-		return createdDate;
-	}
-
-	public void setCreatedDate(LocalDateTime createdDate) {
-		this.createdDate = createdDate;
-	}
-
-	public LocalDateTime getEndDate() {
-		return endDate;
-	}
-
-	public void setEndDate(LocalDateTime endDate) {
-		this.endDate = endDate;
-	}
 
 	public String getName() {
 		return name;

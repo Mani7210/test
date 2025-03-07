@@ -45,21 +45,7 @@ public class EmployeeController {
 
         return ResponseEntity.status(HttpStatus.CREATED).body(savedEmployee);
     }
-
    
-    @GetMapping("/{id}")
-    public ResponseEntity<Employee> getEmployeeById(@PathVariable String id) {
-        logger.info("Fetching employee by ID: {}", id);
-
-        Employee employee = employeeService.getEmployeeById(id);
-        if (employee == null) {
-            logger.warn("Employee with ID {} not found", id);
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-        }
-
-        return ResponseEntity.ok(employee);
-    }
-    
     @GetMapping
     public ResponseEntity<Page<Employee>> getEmployees(
             @RequestParam(defaultValue = "0") int page, 

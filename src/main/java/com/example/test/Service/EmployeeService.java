@@ -21,11 +21,6 @@ public class EmployeeService {
         return employeeRepository.save(employee);
     }
 
-    public Employee getEmployeeById(String id) {
-        Optional<Employee> employee = employeeRepository.findById(id);
-        return employee.orElse(null); 
-}
-    
     public Page<Employee> getEmployees(Pageable pageable) {
         return employeeRepository.findAll(pageable);
     }
